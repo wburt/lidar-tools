@@ -1,0 +1,17 @@
+
+[
+    {
+        "type":"filters.range",
+        "limits":"Classification[1:1],ReturnNumber[1:1]"
+    },
+    {
+        "type": "writers.gdal",
+        "output_type":"idw",
+        "dimension":"Z",
+        "bounds": null,
+        "gdalopts": "COMPRESS=LZW",
+        "gdaldriver":"GTiff",
+        "resolution": 1,
+        "nodata":-9999
+    }
+]
